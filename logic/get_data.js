@@ -1,5 +1,4 @@
 async function getData() {
-    randomNumber = Math.floor(Math.random() * 800 + 1);
     const url = `https://randomuser.me/api/`;
     try {
       const response = await fetch(url);
@@ -19,6 +18,7 @@ async function getData() {
     document.getElementById('img').src = json.results[0].picture.large;
     document.getElementById('email').textContent = json.results[0].email;
     document.getElementById('name').textContent = `${json.results[0].name.title}. ${json.results[0].name.first} ${json.results[0].name.last}`;
+    document.getElementById('location').textContent = json.results[0].location.country;
   }
 
   getData();
