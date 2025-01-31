@@ -1,0 +1,33 @@
+*{
+    font-family: sans-serif;
+}
+
+#get_data{
+    margin-bottom: 15px;
+}
+
+#data {
+    display: flex;
+}
+
+#img {
+    border-radius: 50%;
+}
+
+#details{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#details #name{
+   font-size: 30px;
+   font-weight: bold;
+   margin: 0px;
+   margin-top: 30px;
+}
+#details #email{
+    font-size: 16px;
+    color: grey;
+ }
+
